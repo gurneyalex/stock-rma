@@ -431,7 +431,7 @@
             <field name="name">Customer RMA</field>
             <field name="res_model">rma.order.line</field>
             <field name="domain">[('type','=', 'customer')]</field>
-            <field name="context">{"search_default_activities_today":1}</field>
+            <field name="context">{'customer':1}</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="view_rma_line_tree"/>
@@ -441,7 +441,7 @@
             <field name="name">Supplier RMA</field>
             <field name="res_model">rma.order.line</field>
             <field name="domain">[('type','=', 'supplier')]</field>
-            <field name="context">{"search_default_activities_today":1, "supplier":1}</field>
+            <field name="context">{"supplier":1}</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="view_rma_line_supplier_tree"/>
